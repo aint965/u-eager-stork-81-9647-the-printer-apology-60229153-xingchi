@@ -2,10 +2,13 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 // The Printer Apology — one funny one-line apology from an office printer.
-// Chosen line (106 characters): a printer apologises for printing its user's
-// resignation letter twelve times, and confesses it kept a copy. For leverage.
+// Chosen line (97 characters): the printer apologises for jamming on its
+// user's resignation letter — it read the letter first, agrees with it, and
+// kept a copy. For leverage. The jam is the printer's own signature
+// grievance (the old line had none: any office machine could have said it),
+// and the staccato beats tighten the line while keeping the punch last.
 const ENTRY =
-  "Sorry I printed your resignation letter 12 times. I was rooting for you. I also kept a copy. For leverage.";
+  "Sorry I jammed on your resignation letter. I read it first. I agree. I kept a copy. For leverage.";
 
 // Output directory is overridable for local testing via OUTPUT_DIR or a
 // first CLI argument; it defaults to /output, the sandbox output path.
